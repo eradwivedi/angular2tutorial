@@ -1,0 +1,7 @@
+<br/>
+Name : <input [value]='name' (input)='name=$event.target.value'/> <!--[] property binding flows data from component to view. $event flows data from view to component-->
+<br/>
+NgModel binding <input [(ngModel)]='name'>
+<!-- (): for event binding  ,[]: for porperty binding -->
+<br/>
+You entered : {{name}}

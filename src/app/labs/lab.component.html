@@ -1,0 +1,28 @@
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let lab of labs;">
+            <tr>
+                <td>{{lab.name | uppercase}}</td>
+                <td>{{lab.name}}</td>
+                <td>{{lab.name}}</td>
+                <td>{{lab._id}}</td>
+                <td>{{lab.__v}}</td>
+            </tr>
+        </ng-container>
+        <tr *ngIf="!labs || labs.length==0">
+            <td colspan="5">
+                No Labs to display
+            </td>
+        </tr>
+    </tbody>
+</table>

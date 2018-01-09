@@ -11,9 +11,11 @@ var platform_browser_1 = require("@angular/platform-browser");
 var gender_pipe_1 = require("./utils/gender.pipe");
 var app_component_1 = require("./app.component");
 var employee_component_1 = require("./employee/employee.component");
+var lab_component_1 = require("./labs/lab.component");
 var employeeList_component_1 = require("./employee/employeeList.component");
 var employeeCount_component_1 = require("./employee/components/employeeCount.component");
 var forms_component_1 = require("./forms/forms.component");
+var http_1 = require("@angular/http");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -21,8 +23,8 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-        declarations: [app_component_1.AppComponent, employee_component_1.EmployeeComponent, forms_component_1.FormsComponent, employeeList_component_1.EmployeeListComponent, gender_pipe_1.GenderPipe, employeeCount_component_1.EmployeeCountComponent],
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule],
+        declarations: [app_component_1.AppComponent, employee_component_1.EmployeeComponent, forms_component_1.FormsComponent, employeeList_component_1.EmployeeListComponent, gender_pipe_1.GenderPipe, employeeCount_component_1.EmployeeCountComponent, lab_component_1.LabComponent],
         bootstrap: [app_component_1.AppComponent] /** Root component with bootstraps the project. its directive is our home page*/
     })
 ], AppModule);

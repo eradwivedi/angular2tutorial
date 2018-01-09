@@ -4,12 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { GenderPipe } from './utils/gender.pipe'
 import { AppComponent }  from './app.component';
 import { EmployeeComponent } from './employee/employee.component';
+
+import { LabComponent } from './labs/lab.component';
 import { EmployeeListComponent } from './employee/employeeList.component';
 import { EmployeeCountComponent } from './employee/components/employeeCount.component';
 import { FormsComponent } from './forms/forms.component';
+import { HttpModule } from '@angular/http';
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ], /** */
-  declarations: [ AppComponent,EmployeeComponent,FormsComponent,EmployeeListComponent,GenderPipe,EmployeeCountComponent  ], /** Registering these components with this module*/
+  imports:      [ BrowserModule, FormsModule,HttpModule ], /** */
+  declarations: [ AppComponent,EmployeeComponent,FormsComponent,EmployeeListComponent,GenderPipe,EmployeeCountComponent,LabComponent  ], /** Registering these components with this module*/
   bootstrap:    [ AppComponent ] /** Root component with bootstraps the project. its directive is our home page*/
 })
 export class AppModule { }

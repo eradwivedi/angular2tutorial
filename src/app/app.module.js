@@ -8,10 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core"); /** reqiured for all apps, includes ng-if and ng-for; required to add metadata to an angular module */
 var forms_1 = require("@angular/forms");
 var platform_browser_1 = require("@angular/platform-browser");
+var ng2_completer_1 = require("ng2-completer");
 var gender_pipe_1 = require("./utils/gender.pipe");
 var app_component_1 = require("./app.component");
 var employee_component_1 = require("./employee/employee.component");
 var lab_component_1 = require("./labs/lab.component");
+var autocomplete_component_1 = require("./autocomplete/autocomplete.component");
 var employeeList_component_1 = require("./employee/employeeList.component");
 var employeeCount_component_1 = require("./employee/components/employeeCount.component");
 var forms_component_1 = require("./forms/forms.component");
@@ -23,8 +25,8 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule],
-        declarations: [app_component_1.AppComponent, employee_component_1.EmployeeComponent, forms_component_1.FormsComponent, employeeList_component_1.EmployeeListComponent, gender_pipe_1.GenderPipe, employeeCount_component_1.EmployeeCountComponent, lab_component_1.LabComponent],
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, ng2_completer_1.Ng2CompleterModule],
+        declarations: [app_component_1.AppComponent, employee_component_1.EmployeeComponent, forms_component_1.FormsComponent, employeeList_component_1.EmployeeListComponent, gender_pipe_1.GenderPipe, employeeCount_component_1.EmployeeCountComponent, lab_component_1.LabComponent, autocomplete_component_1.AutoCompleteComponent],
         bootstrap: [app_component_1.AppComponent] /** Root component with bootstraps the project. its directive is our home page*/
     })
 ], AppModule);

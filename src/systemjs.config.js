@@ -12,6 +12,7 @@
     map: {
       // our app is within the app folder
       'app': 'app',
+      'ng2-completer': 'node_modules/ng2-completer/ng2-completer.umd.js',
 
       // angular bundles
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
